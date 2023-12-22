@@ -4,7 +4,7 @@
 
 ### 1.1算法实现
 
-![img](file:///C:/Users/86178/AppData/Local/Temp/msohtmlclip1/01/clip_image002.png)
+![img](https://github.com/wztsir/security_status_detection/blob/main/img/clip_image002.png?raw=true)
 
 l 结构设计： 在业界模型比较的基础上，选择了以工业界广泛应用的轻量级YOLO系列模型为设计和优化基础，以在满足工业应用速度需求的同时提高模型预测精度。
 
@@ -52,45 +52,37 @@ l 火灾烟雾检测系统： 用户可选择相应的图片目录，平台将�
 
  
 
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
 ## 3本项目成果展示
 
 ### 3.1数据集构造（收集10,000多张，标注1000多张）
 
-![img](file:///C:/Users/86178/AppData/Local/Temp/msohtmlclip1/01/clip_image004.jpg)
+![img](https://github.com/wztsir/security_status_detection/blob/main/img/clip_image004.jpg?raw=true)
 
-![img](file:///C:/Users/86178/AppData/Local/Temp/msohtmlclip1/01/clip_image006.jpg)
+![img](https://github.com/wztsir/security_status_detection/blob/main/img/clip_image006.jpg?raw=true)
+
+
 
 ### 3.2平台展示
 
-![img](./img/clip_image008.jpg)
+![img](https://github.com/wztsir/security_status_detection/blob/main/img/clip_image008.jpg?raw=true)
 
  
 
 ​																							图1 平台开始界面
 
-![img](./img/clip_image010.jpg)
+![img](https://github.com/wztsir/security_status_detection/blob/main/img/clip_image010.jpg?raw=true)
 
 ​																					图2 安全装备检测系统界面
 
-![img](./img/clip_image012.jpg)
+![img](https://github.com/wztsir/security_status_detection/blob/main/img/clip_image012.jpg?raw=true)
 
-​																	图3 安全装备检测系统-视频/rtsp检测界面![img](./img/clip_image014.jpg)
+​																	图3 安全装备检测系统-视频/rtsp检测界面
+
+![img](https://github.com/wztsir/security_status_detection/blob/main/img/clip_image014.jpg?raw=true)
 
 ​																	图4 安全装备检测系统-图片检测界面
 
-![img](./img/clip_image016.jpg)
+![img](https://github.com/wztsir/security_status_detection/blob/main/img/clip_image016.jpg?raw=true)
 
 ​																图5 火灾烟雾检测系统-图片检测界面
 
