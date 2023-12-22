@@ -1,0 +1,15 @@
+### Editor ###
+.vscode/
+.ionide/
+.history/
+.idea/
+
+### Build ###
+__pycache__/
+*.mp4
+*.pt
+runs/
+_reference/
+images/
+*.zip
+config.yaml

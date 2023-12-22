@@ -1,0 +1,201 @@
+/* Reset some default styles */
+body, h1, p, ul, ol, li, figure, figcaption, blockquote, dl, dd {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Global styles */
+body {
+    background-color: #f9f9f9;
+}
+/* Additional styles for the header */
+header {
+    background-color: #191970; /* Midnight blue */
+    padding: 20px 0;
+    text-align: center;
+    position: relative;
+}
+
+header a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 24px;
+    margin: 150px 150px;
+    position: relative;
+    cursor: pointer;
+}
+
+header a::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+    bottom: -5px;
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.3s ease;
+}
+
+header a:hover::before,
+header a.active::before {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+/* Responsive styles for the header */
+@media (max-width: 768px) {
+    header {
+        padding: 15px 0;
+    }
+
+    header a {
+        font-size: 18px;
+        margin: 0 10px;
+    }
+}
+.setup {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px; /* 为了和下面的元素有一些间距 */
+}
+
+.setup label {
+    flex: 1; /* 让标签自动扩展以占据剩余空间 */
+    text-align: right;
+    margin-right: 10px;
+}
+
+.setup input,
+.setup select {
+    flex: 1; /* 让输入框和选择框自动扩展以占据剩余空间 */
+    padding: 8px;
+    margin: 5px;
+}
+
+.setup button {
+    flex: 1; /* 让按钮自动扩展以占据剩余空间 */
+    padding: 12px 24px;
+    margin: 10px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.setup button:hover {
+    background-color: #2980b9;
+}
+
+
+.container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+label {
+    font-size: 18px;
+    margin: 10px;
+    display: block;
+}
+
+input, select {
+    font-size: 16px;
+    padding: 8px;
+    margin: 5px;
+}
+
+button {
+    font-size: 18px;
+    padding: 12px 24px;
+    margin: 10px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    label {
+        font-size: 16px;
+        margin: 8px;
+    }
+
+    input, select {
+        font-size: 14px;
+        padding: 6px;
+        margin: 4px;
+    }
+
+    button {
+        font-size: 16px;
+        padding: 10px 20px;
+        margin: 8px;
+    }
+}
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 999;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+.overlay img {
+    max-width: 90%;
+    max-height: 90%;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+}
+
+#progress-container {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    background-color: #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    z-index: 1000; /* 设置层级高于半透明背景 */
+}
+
+#progress-bar {
+    height: 30px; /* 修改高度 */
+    width: 0;
+    background-color: #4CAF50;
+    text-align: center;
+    line-height: 30px; /* 修改行高 */
+    color: #fff;
+    transition: width 0.3s ease;
+}
+

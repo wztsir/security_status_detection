@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>安全帽与反光衣检测系统</title>
+    <link rel="stylesheet" type="text/css" href="equipment.css" />
+</head>
+
+<body>
+    <header>
+        <a href="./equipment.html">安全装备检测系统</a>
+        <a href="../fire/fire.html">火灾烟雾检测系统</a>
+    </header>
+    <hr />
+
+    <div id="div-main">
+        <label for="detectionType">选择检测类型:</label>
+        <select id="detectionType" onchange="toggleDetectionButtons()">
+            <option value="video">视频/rtsp检测</option>
+            <option value="image">图片检测</option>
+        </select>
+
+
+        <div id="set-video">
+            <button id="btn-enable" class="btn-control">启动</button>
+            <button id="btn-disable" class="btn-control" disabled>结束</button>
+        </div>
+
+        <div id="set-image" style="display:none">
+            <input type="file" id="file-input" accept="image/*" style="display:none">
+            <button id="btn-upload" class="btn-control"
+                onclick="document.getElementById('file-input').click()">上传图片</button>
+            <button id="btn-detect" class="btn-control" disabled>启动检测</button>
+            <button id="btn-save" class="btn-control" disabled>保存检测图片</button>
+        </div>
+
+
+        <br />
+        <div class="txt-status">
+            检测到工人
+            <div id="num-person">
+                0
+            </div>
+        </div>
+        <div class="txt-status">
+            未佩戴安全帽人数
+            <div id="num-no-helmet">
+                0
+            </div>
+        </div>
+        <div class="txt-status">
+            未穿戴反光衣人数
+            <div id="num-no-cloth">
+                0
+            </div>
+        </div>
+        <br />
+        <img id="img-frame" src="" />
+
+        <pre id="txt-logger"></pre>
+    </div>
+
+    <script src="equipment.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</body>
+
+</html>

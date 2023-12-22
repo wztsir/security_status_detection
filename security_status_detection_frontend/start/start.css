@@ -1,0 +1,29 @@
+/* styles.css 文件内容 */
+#card-container {
+    position: fixed;
+    top: 30%;
+    left: 65%;
+    right: 10%;
+    z-index: 9998; /* 小于按钮的 zIndex */
+}
+
+#card-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#experience-btn {
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* 可以根据需要添加其他样式规则 */
